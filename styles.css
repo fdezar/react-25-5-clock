@@ -1,14 +1,98 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-danger {
-    background-color: rebeccapurple;
-}
-
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.break-session-length {
+    display: flex;
+    justify-content: space-between;
+}
+
+.break-session-length div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.break-session-length > div {
+    flex-basis: 45%;
+}
+
+.break-session-length h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.break-session-length .btn {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.break-session-length .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.break-session-length p {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.timer-wrapper {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.timer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.timer h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.timer h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    color: #111;
+}
+
+.btn:active {
+    background-color: #ccc;
 }

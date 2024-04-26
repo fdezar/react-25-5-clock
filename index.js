@@ -100,17 +100,17 @@ const App = () => {
                     <div>
                         <h3 id="break-label">Break</h3>
                         <div>
-                            <button id="break-increment" className="btn btn-success" disabled={play} onClick={handleBreakIncrease}>+</button>
-                                <p id="break-length">{breakLength}</p>
                             <button id="break-decrement" className="btn btn-warning" disabled={play} onClick={handleBreakDecrease}>-</button>
+                                <p id="break-length">{breakLength}</p>
+                            <button id="break-increment" className="btn btn-success" disabled={play} onClick={handleBreakIncrease}>+</button>
                         </div>
                     </div>
                     <div>
                         <h3 id="session-label">Session</h3>
                         <div>
-                            <button id="session-increment" className="btn btn-success" disabled={play} onClick={handleSessionIncrease}>+</button>
-                                <p id="session-length">{sessionLength}</p>
                             <button id="session-decrement" className="btn btn-warning" disabled={play} onClick={handleSessionDecrease}>-</button>
+                                <p id="session-length">{sessionLength}</p>
+                            <button id="session-increment" className="btn btn-success" disabled={play} onClick={handleSessionIncrease}>+</button>
                         </div>
                     </div>
                 </div>
