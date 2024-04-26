@@ -97,20 +97,20 @@ const App = () => {
             <div className="wrapper">
                 <h2>Pomodoro Clock</h2>
                 <div className="break-session-length">
-                    <div class="break-session-div">
+                    <div className="break-session-div">
                         <h3 id="break-label">Break</h3>
                         <div>
-                            <button id="break-decrement" className="btn btn-warning subtract" disabled={play} onClick={handleBreakDecrease}>-</button>
+                            <button id="break-decrement" className="btn btn-secondary subtract" disabled={play} onClick={handleBreakDecrease}>-</button>
                                 <p id="break-length">{breakLength}</p>
-                            <button id="break-increment" className="btn btn-success add" disabled={play} onClick={handleBreakIncrease}>+</button>
+                            <button id="break-increment" className="btn btn-secondary add" disabled={play} onClick={handleBreakIncrease}>+</button>
                         </div>
                     </div>
-                    <div class="break-session-div">
+                    <div className="break-session-div">
                         <h3 id="session-label">Session</h3>
                         <div>
-                            <button id="session-decrement" className="btn btn-warning subtract" disabled={play} onClick={handleSessionDecrease}>-</button>
+                            <button id="session-decrement" className="btn btn-secondary subtract" disabled={play} onClick={handleSessionDecrease}>-</button>
                                 <p id="session-length">{sessionLength}</p>
-                            <button id="session-increment" className="btn btn-success add" disabled={play} onClick={handleSessionIncrease}>+</button>
+                            <button id="session-increment" className="btn btn-secondary add" disabled={play} onClick={handleSessionIncrease}>+</button>
                         </div>
                     </div>
                 </div>
@@ -119,12 +119,12 @@ const App = () => {
                     <h2 id="timer-label">{title}</h2>
                     <h3 id="time-left">{timeFormatter()}</h3>
                 </div>
-                <button id="start_stop" className="btn btn-primary" onClick={handlePlay} >Start/Stop</button>
-                <button id="reset" className="btn btn-danger" onClick={handleReset}>Reset</button>
+                <button id="start_stop" className="btn btn-secondary" onClick={handlePlay} >Start/Stop</button>
+                <button id="reset" className="btn btn-secondary" onClick={handleReset}>Reset</button>
             </div>
             </div>
-            <p>Made by @fdezar</p>
-            <a href="https://github.com/fdezar/react-25-5-clock">https://github.com/fdezar/react-25-5-clock</a>
+            <p className="footer">Made by @fdezar</p>
+            <a className="footer" href="https://github.com/fdezar/react-25-5-clock">https://github.com/fdezar/react-25-5-clock</a>
             <audio id="beep" preload="auto" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
         </div>
     );
