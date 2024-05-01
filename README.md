@@ -2,6 +2,8 @@
 
 This is a Pomodoro Clock web application built using React.js. It helps users manage their time effectively using the Pomodoro Technique, allowing them to set a session length and break length.
 
+This project constitutes one of the five mandatory projects for my freeCodeCamp Front End Development Libraries Certification.
+
 ## Features ✨
 
 - Set custom session length and break length
